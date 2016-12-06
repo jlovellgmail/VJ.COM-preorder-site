@@ -1,0 +1,315 @@
+body {
+	//background-color: black;
+	height: 100%;
+}
+.productPage {
+	.productImageContainer {
+		display: inline-block;
+		vertical-align:top;
+	    margin-left: 40px;
+	}
+	.productDescriptionContainer {
+		display: inline-block;
+	    margin-left: 50px;
+	    margin-top: 9px;
+	    width: 410px;
+	    text-align: left;
+	    padding-right: 20px;
+	}
+	.collection {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+	.collection2 {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.productTitle {
+		font-size: 36px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.productPrice {
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 100;
+	    margin-top: 3px;
+	}
+	.productDescription {
+		font-size: 15px;
+		margin-top: 12px;
+		line-height: 20px;
+	}
+	.productMoreDetails {
+		font-weight: 700;
+		font-size: 17px;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+	.addToCartButton {
+		background-color: black;
+		padding: 12px;
+		color: white;
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 20px;
+		display: inline-block;
+	}
+}
+
+
+// above is from pre-less css file for preorder site
+//------------------------------------------------------------
+//------------------------------------------------------------
+//------------------------------------------------------------
+//------------------------------------------------------------
+@iconWidth: 90px;
+@navHeight: 56px;
+//------------------------------------------------------------
+.navBgWrapper {
+	background-color: black;
+	height: @navHeight;
+}
+.bodyCopy {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: left;
+	display: inline-block;
+}
+.page {
+	
+	/*
+	background-image: url("/preorderimages/bg.jpg");
+    background-position-x: center;
+    background-position-y: -96px;
+    background-size: 100% 1371px;
+    background-repeat: no-repeat;
+    */
+
+    width: 100%;
+	font-family: proxima-nova, sans-serif;
+	margin-top: @navHeight;
+}
+.widthWrapper {
+	
+	//max-width: 1200px;
+	//max-width: 1140px;
+	max-width: 1077px;
+
+
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+
+.breadcrumb {
+
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    padding-top: 10px;
+    letter-spacing: -.03pt;
+	a {
+    	color: rgba(0,0,0, .4);
+		font-size: 13px;
+		&:before { 
+		    content: " > ";
+		    opacity: .5;
+		}
+		&.first {
+			&:before {
+				content: "";
+			}
+		}
+	}
+	.hline {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin-top: 8px;
+		margin-bottom: 0;
+	}
+}
+.rowTop {
+    padding-top: 100px;
+    padding-bottom: 29px;
+}
+.rowSlides {
+	margin-top: 30px;
+}
+.slider {
+	width: 950px;
+	position: relative;
+	display: inline-block;
+	img {
+		display: inline-block;
+		&.arrow {
+			height: 40px;
+		    position: absolute;
+		    top: 50%;
+		    margin: 0;
+		    &.left {
+		    	left: 0;
+		    	transform: translateY(-50%);
+		    }
+		    &.right {
+		    	right: 0;
+		    	transform: translateY(-50%) scaleX(-1);
+		    }
+		}
+		&.slide {
+			width: 140px;
+		}
+	}
+}
+.rowDetails {
+	font-family: proxima-nova, sans-serif;
+    margin-top: 80px;
+	.blurb {
+		display: inline-block;
+		
+		//width: 49%;
+		width: 430px;
+
+		text-align: left;
+		vertical-align: top;
+		.heading {
+			text-transform: uppercase;
+			font-weight: 800;
+		    font-size: 21px;
+		    margin-bottom: 8px;
+		}
+	}
+	.specs {
+		display: inline-block;
+		text-align: left;
+		margin-left: 40px;
+		vertical-align: top;
+		.section {
+			margin-bottom: 20px;
+		}
+		.heading {
+			text-transform: uppercase;
+			font-weight: 800;
+		    font-size: 18px;
+		    margin-bottom: 3px;
+		}
+	}
+}
+.featuresSection {
+    margin-top: 70px;
+	.featuresContainer {
+	    background-color: rgba(0,0,0, .03);
+	    width: 560px;
+	    margin: 0 auto;
+        padding-top: 20px;
+    	padding-bottom: 30px;
+	    .hline {
+    	    width: calc(~"100% - 80px");
+		    border-bottom: 1px solid rgba(0,0,0, .1);
+		    display: inline-block;
+		}
+	    .feature {
+		    padding: 30px;
+		    display: inline-block;
+			.iconFrame {
+				display: inline-block;
+				vertical-align: top;
+		    	width: 240px;
+				.heading {
+					text-transform: uppercase;
+					font-weight: 800;
+				    font-size: 18px;
+				    margin-top: 6px;
+				}
+				img {
+				    width: @iconWidth;
+				}
+			}
+			.bodyCopy {
+				width: 430px;
+				margin-top: 7px;
+				display: block;
+				text-align: justify;
+			}    	
+	    }
+	}
+}
+
+// collection page
+.collectionPage {
+	min-height: 100%;
+	.topRow {
+		min-height: 40px;
+		text-align: left;
+		.headline {
+			margin-top: 50px;
+			color: black;
+		    font-size: 46px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			.part1 {
+				font-weight: 600;
+				display: inline-block;
+			}
+			.part2 {
+				font-weight: 100;
+				display: inline-block;
+				margin-left: 8px;
+				letter-spacing: 2px;
+			}
+		}
+		.text {
+			color: rgba(0,0,0, .9);
+			width: 630px;
+			font-size: 19px;
+			font-weight: 300;
+			line-height: 30px;
+			margin-top: 13px;
+		}
+	}
+}
+.productsGrid {
+	.row {
+    	margin-top: 50px;
+    	&.first {
+    		margin-top: 30px;
+    	}
+		.item {
+			
+			//width: 340px;
+			width: 33%;
+
+			display: inline-block;
+			img {
+				width: 100%;
+			}
+			.caption {
+				text-align: left;
+				//margin-left: 20px;
+				.title {
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+				.price {
+					font-weight: 100;
+				}
+			}
+		}
+		.colSpacer {
+			display: inline-block;
+			width: 20px;
+		}
+	}
+}
+
+//---------------------------------------------------
+// from collections_preorder.less
+
+
+
+
+
