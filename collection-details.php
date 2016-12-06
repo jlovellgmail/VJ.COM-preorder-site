@@ -33,10 +33,10 @@ $CollProdList = $CollObj->getProducts();
 <head>
     <?php include '/incs/head-links.php'; ?>
 	<link rel="stylesheet" href="/css/index.css" />
-	<link rel="stylesheet" href="../css/preorder_bootstrap_generic.css" />
+	<link rel="stylesheet" href="../css/preorder.css" />
 </head>
 <body class="body">
-	<?php include 'nav_bootstrap.php'; ?>
+	<?php include 'nav.php'; ?>
 	
 
 
