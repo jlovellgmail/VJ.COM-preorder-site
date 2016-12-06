@@ -5,6 +5,8 @@ $seo_variable = "home";
 ?>
 <html class="no-js" lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/bootstrap-grid.css" />
     <?php include '/incs/head-links.php'; ?>
 	<link rel="stylesheet" href="/css/index.css" />
 	<link rel="stylesheet" href="../css/preorder.css" />
@@ -21,7 +23,7 @@ $seo_variable = "home";
 
 				<div class="preorderText">
 					<div class="headline">
-						Exclusive Preview
+						Early Access
 					</div>
 					<div class="titleContainer">
 						<div class="title">
@@ -51,6 +53,10 @@ $seo_variable = "home";
 							</div>
 						</a>
 					</div>
+				</div>
+
+
+				<div class="imageWrapper">
 				</div>
 
 
