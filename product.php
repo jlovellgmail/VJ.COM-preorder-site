@@ -98,6 +98,69 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 
 
 
+			<div>
+				got this right here
+			</div>
+
+			<?php if (isset($pgallery) && $pgallery->count() > 0) { ?>     
+
+			    <div class="bgWrapperLeaf marBottomR3 prodGallerySlider">
+			        <div class="absBgWrapper h100p zI2">
+			            <!--<div class="cornerFixUL"></div>
+			            <div class="cornerFixLR"></div>-->
+			        </div>
+			        <div id="owlThumb" class="owl-carousel">
+			            <?php
+			            $i = 0;
+			            foreach ($pgallery as $img) {
+			                $ImgUrl = $img->getVar("ThumbnailUrl");
+			                $ImgUrl = str_replace('\\', '/', $ImgUrl);
+			                ?>        
+			                <div class="productGalleryImgWrapper">
+			                    <div class="aspectDummy43"></div>
+			                    <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
+			                </div>
+			                <?php
+			                $i++;
+			            }
+			            ?>
+			        </div>
+			    </div>
+
+			    <script>
+			        $(document).ready(function () {
+			            $("#owlThumb").owlCarousel({
+			                startPosition: 2,
+			                loop: true,
+			                margin: 5,
+			                autoplay: false,
+			                // autoplayTimeout: 2500,
+			                // autoplaySpeed: 750,
+			                // autoplayHoverPause: true,
+			                dots: true,
+			                nav: true,
+			                dotsEach: 1,
+			                responsive: {
+			                    0: {
+			                        items: 1
+			                    },
+			                    640: {
+			                        items: 3
+			                    },
+			                    1000: {
+			                        items: 4
+			                    }
+			                }
+			            });
+			        });
+			    </script>
+
+			<?php } ?>         
+
+
+
+
+
 
 
 			<div class="rowDetails">
