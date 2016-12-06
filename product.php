@@ -35,7 +35,7 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 	<link rel="stylesheet" href="../css/bootstrap-grid.css" />
     <?php include '/incs/head-links_bootstrap.php'; ?>
 	<link rel="stylesheet" href="/css/index.css" />
-	<link rel="stylesheet" href="../css/preorder_bootstrap.css" />
+	<link rel="stylesheet" href="../css/preorder.css" />
 </head>
 <body class="body">
 
