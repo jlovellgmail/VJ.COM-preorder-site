@@ -41,7 +41,7 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 
 			
 
-	<?php include 'nav_bootstrap.php'; ?>
+	<?php include 'nav.php'; ?>
 	
 	<!-- <div class="page"> -->
 	<div class="productPage">
