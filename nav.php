@@ -16,7 +16,15 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
         <div class="headerHeightWrapper">
             <div class="logoWrapper">
                 <a class="logoLink" href="preorder/index.php">
+                    
+                    
+                    <!--
                     <img class="navLogo" src="../images/VJ_logo.svg" alt="Virgil James" />
+                    -->
+                    <img class="navLogo" src="http://virgiljames.com/preorder/images/VJ_logo.svg" alt="Virgil James" />
+
+
+
                 </a>
             </div>
             <div class="rightItemsContainer">

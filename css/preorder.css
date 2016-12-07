@@ -88,6 +88,7 @@ body {
   position: relative;
   display: inline-block;
   margin-left: 15px;
+  left: 0;
 }
 .headerContainer .navWidthWrapper .headerHeightWrapper .logoWrapper .logoLink {
   position: relative;
@@ -1337,14 +1338,14 @@ body {
   min-height: 100%;
   position: relative;
   padding-bottom: 86px;
+  padding-top: 76px;
   height: initial;
 }
 .cartPage .cartMain {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 76px;
+  margin-top: 30px;
 }
 .cartPage .headerContainer .navWidthWrapper {
   max-width: 100%;
-  width: calc(100% - 15px - 15px);
 }
