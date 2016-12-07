@@ -33,7 +33,7 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="../css/bootstrap-grid.css" />
-    <?php include '/incs/head-links_bootstrap.php'; ?>
+    <?php include '/incs/head-links.php'; ?>
 	<link rel="stylesheet" href="/css/index.css" />
 	<link rel="stylesheet" href="../css/preorder.css" />
 	<link rel="stylesheet" href="/js/owl/dev/dist/assets/owl.carousel.css" />
