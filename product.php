@@ -36,6 +36,11 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
     <?php include '/incs/head-links_bootstrap.php'; ?>
 	<link rel="stylesheet" href="/css/index.css" />
 	<link rel="stylesheet" href="../css/preorder.css" />
+	<link rel="stylesheet" href="/js/owl/dev/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/css/owl/owl.theme.vj.product.css" />
+    <link rel="stylesheet" href="/css/lightBox.css" />
+    <script src="/js/owl/dev/dist/owl.carousel.js"></script>
+	<script src="/js/product.js" type="text/javascript"></script>
 </head>
 <body class="body">
 
@@ -57,7 +62,12 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 				<div class="hline"></div>
 			</div>
 
-			<?php if ($showProduct) { ?>
+			<?php if ($showProduct) { 
+					$pgallery = $Product->getProductGallery();
+					  if (isset($pgallery) && $pgallery->count() > 0) {
+							include $rootpath.'/incs/productHighResGallery.php';
+					  }
+			?>
 			<div class="rowTop">
 				<div class="productImageContainer">
 					<img src="<?php echo $ImgUrl; ?>" />
@@ -82,25 +92,7 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 			</div>
 
 
-			<div class="rowSlides">
-				<div class="slider">
-					<img class="arrow left" src="/preorder/images/arrowLeft.svg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow1.jpg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow2.jpg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow3.jpg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow4.jpg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow5.jpg" />
-					<img class="slide" src="/preorder/images/drawstring_slideshow6.jpg" />
-					<img class="arrow right" src="/preorder/images/arrowLeft.svg" />
-				</div>
-			</div>
 
-
-
-
-			<div>
-				got this right here
-			</div>
 
 			<?php if (isset($pgallery) && $pgallery->count() > 0) { ?>     
 
@@ -154,8 +146,7 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 			            });
 			        });
 			    </script>
-
-			<?php } ?>         
+		    <?php } ?>         
 
 
 
@@ -179,8 +170,8 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 						</div>
 						<div class="bodyCopy">
 							Height / Width / Depth:<br/>
-							12.3 in  /  11.5 in  /  6.0 in<br/>
-							31 cm  /  29 cm  /  15 cm
+							<?php  echo $Product->getSize();?><br/>
+							<?php  echo $Product->getSizeCM(); ?>
 						</div>
 					</div>
 					<div class="section">
@@ -247,4 +238,9 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 
 </body>
 </html>
-
+ <script>
+        function openModalStatic(i) {
+            $('#owlLarge').trigger("to.owl.carousel", [i, 1, true]);
+            $("#staticModal").removeClass("hide");
+        }
+    </script>

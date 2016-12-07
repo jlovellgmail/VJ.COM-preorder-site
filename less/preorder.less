@@ -49,7 +49,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	//margin-bottom: 200px;
+	margin-bottom: 200px;
 }
 @media (min-width: 0px) {
 	.widthWrapper {
@@ -90,7 +90,6 @@ body {
 		height: 100%;
 		margin: 0 auto;
 		text-align: left;
-		padding-top: 0;
 		.headerHeightWrapper {
 			height: @headerHeight;
 			padding-top: 9px;
@@ -100,9 +99,6 @@ body {
 				position: relative;
 				display: inline-block;
 				margin-left: 15px;
-
-				left: 0;
-
 				.logoLink {
 					position: relative;
 					display: block;
@@ -265,7 +261,6 @@ body {
 	left: 0;
 	height: @footerHeight;
     padding-top: 24px;
-    position: absolute;
     .footerWidthWrapper {
     	width: calc(~"100% - 95px - 95px");
     	height: 100%;
@@ -291,6 +286,13 @@ body {
 		    }
 		}
 		.rightFooterColumn {
+			
+			/*
+			width: auto;
+			position: absolute;
+			right: 95px;
+			*/
+
 			position: relative;
 			right: initial;
 			width: 100%;
@@ -1440,30 +1442,6 @@ body {
 		line-height: initial;
 		text-align: left;
 	}	
-}
-
-//-----------------------------------------------
-//-----------------------------------------------
-//-----------------------------------------------
-// cart
-
-.cartPage {
-	min-height: 100%;
-    position: relative;
-    padding-bottom: 86px;
-    padding-top: 76px;
-    height: initial;
-	.cartMain {
-		max-width: 1200px;
-		margin: 0 auto;
-		margin-top: 30px;
-	}
-	.headerContainer {
-		.navWidthWrapper {
-			max-width: 100%;
-			//width: calc(~"100% - 15px - 15px");
-		}
-	}
 }
 
 
