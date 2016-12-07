@@ -41,7 +41,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 200px;
 }
 @media (min-width: 0px) {
   .widthWrapper {
@@ -281,11 +280,6 @@ body {
   position: relative;
 }
 .footerContainer .footerWidthWrapper .rightFooterColumn {
-  /*
-			width: auto;
-			position: absolute;
-			right: 95px;
-			*/
   position: relative;
   right: initial;
   width: 100%;
@@ -1337,4 +1331,14 @@ body {
   letter-spacing: .5px;
   line-height: initial;
   text-align: left;
+}
+.cartPage .cartMain {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 76px;
+  margin-bottom: 86px;
+}
+.cartPage .headerContainer .navWidthWrapper {
+  max-width: 100%;
+  width: calc(100% - 15px - 15px);
 }
