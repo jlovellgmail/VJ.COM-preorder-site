@@ -242,6 +242,7 @@ body {
   left: 0;
   height: 86px;
   padding-top: 24px;
+  position: absolute;
 }
 .footerContainer .footerWidthWrapper {
   width: calc(100% - 95px - 95px);
@@ -1332,11 +1333,16 @@ body {
   line-height: initial;
   text-align: left;
 }
+.cartPage {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 86px;
+  height: initial;
+}
 .cartPage .cartMain {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 76px;
-  margin-bottom: 86px;
 }
 .cartPage .headerContainer .navWidthWrapper {
   max-width: 100%;
