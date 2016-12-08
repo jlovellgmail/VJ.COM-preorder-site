@@ -96,6 +96,10 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 
 			<?php if (isset($pgallery) && $pgallery->count() > 0) { ?>     
 
+				<script>
+					console.log(<?php echo $pgallery->count(); ?>);
+				</script>
+
 			    <div class="bgWrapperLeaf marBottomR3 prodGallerySlider">
 			        <div class="absBgWrapper h100p zI2">
 			            <!--<div class="cornerFixUL"></div>
@@ -111,6 +115,11 @@ $ImgUrl = str_replace('\\', '/', $ImgUrl);
 			                <div class="productGalleryImgWrapper">
 			                    <div class="aspectDummy43"></div>
 			                    <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
+
+			                    <script>
+			                    	console.log(<?php //echo $ImgUrl; ?>);
+			                    </script>
+
 			                </div>
 			                <?php
 			                $i++;
